@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <h2>Registration Form</h2>
+
+        <label for="username-input">UserName</label>
+        <br>
+        <input type="text" name="UserName" required id="username-input" autocomplete="UserName">
+        <span id="userNameError" style="color: red; display: none;">Username must be at least 3 characters long.</span>
+        <br>
+        <br>
+        <label for="email-input">Email</label>
+        <br>
+        <input type="email" name="Email" required id="email-input" autocomplete="Email">
+        <br>
+        <br>
+        <label for="password-input">Password</label>
+        <br>
+        <input type="password" name="Password" required id="password-input">
+        <br>
+        <br>
+        <label for="confirm-password-input">Confirm Password</label>
+        <br>
+        <input type="password" name="ConfirmPassword" required id="confirm-password-input">
+        <br>
+        <br>
+        <button type="submit" >Submit</button>
+
+
+    </form>
+
+    <script src="form.js"></script>
+</body>
+</html>
