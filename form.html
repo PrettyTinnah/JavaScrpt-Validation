@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Validation Assignment</title>
+  <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <form id="myForm">
-        <h2>Registration Form</h2>
+  <div class="form-container">
+    <h2>Register Account</h2>
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your full name">
+        <small></small>
+      </div>
 
-        <label for="username-input">UserName</label>
-        <br>
-        <input type="text" name="UserName" required id="username-input" autocomplete="UserName">
-        <span id="userNameError" style="color: red; display: none;">Username must be at least 3 characters long.</span>
-        <br>
-        <br>
-        <label for="email-input">Email</label>
-        <br>
-        <input type="email" name="Email" required id="email-input" autocomplete="Email">
-        <br>
-        <br>
-        <label for="password-input">Password</label>
-        <br>
-        <input type="password" name="Password" required id="password-input">
-        <br>
-        <br>
-        <label for="confirm-password-input">Confirm Password</label>
-        <br>
-        <input type="password" name="ConfirmPassword" required id="confirm-password-input">
-        <br>
-        <br>
-        <button type="submit" >Submit</button>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="example@mail.com">
+        <small></small>
+      </div>
 
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password">
+        <small></small>
+      </div>
 
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" placeholder="Repeat password">
+        <small></small>
+      </div>
+
+      <div class="form-group checkbox">
+        <label>
+          <input type="checkbox" id="terms"> I agree to the terms and conditions
+        </label>
+        <small></small>
+      </div>
+
+      <button type="submit">Submit</button>
+      <p class="success-msg" id="successMessage"></p>
     </form>
+  </div>
 
-    <script src="form.js"></script>
+  <script src="form.js"></script>
 </body>
 </html>
